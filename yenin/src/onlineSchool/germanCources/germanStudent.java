@@ -1,20 +1,21 @@
-package german_cources;
+package onlineSchool.germanCources;
 
-public class German_student {
+import onlineSchool.servStudent;
+
+public class germanStudent {
     private static int studentcounter;
 
     private String name;
     private int marks;
 
-    private int id;
     private boolean homework_done;
 
     private static int homework_counter;
 
-    public German_student(String name, int marks, int id, boolean homework_done) {
+    public germanStudent(String name, int marks, boolean homework_done) {
+        servStudent.studentId++;
         this.name = name;
         this.marks = marks;
-        this.id = id;
         this.homework_done = homework_done;
         studentcounter++;
         if (homework_done) {
@@ -23,11 +24,11 @@ public class German_student {
     }
 
     public static int getStudentCounter() {
-        return German_student.studentcounter;
+        return germanStudent.studentcounter;
     }
 
     public static int getHomeworkCounter() {
-        return German_student.homework_counter;
+        return germanStudent.homework_counter;
     }
 }
 

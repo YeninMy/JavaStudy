@@ -1,43 +1,46 @@
-import englsih_cources.English_lectures.English_homework;
-import englsih_cources.English_student;
-import englsih_cources.English_teacher;
-import french_cources.French_student;
-import french_cources.French_teacher;
-import german_cources.German_student;
-import german_cources.German_teacher;
+import onlineSchool.englsihCources.englishStudent;
+import onlineSchool.englsihCources.englishTeacher;
+import onlineSchool.frenchCources.frenchStudent;
+import onlineSchool.frenchCources.frenchTeacher;
+import onlineSchool.germanCources.germanStudent;
+import onlineSchool.germanCources.germanTeacher;
+import onlineSchool.servStudent;
+import onlineSchool.servTeacher;
 
 public class Main {
     public static void main(String[] args) {
         System.out.println("Онлайн школа:");
+        englishStudent engSt1 = new englishStudent("Mykhailo", 4, true);
+        englishStudent engSt2 = new englishStudent("Ruslan", 5, false);
+        englishStudent engSt3 = new englishStudent("Vadim", 5, true);
+        englishStudent engSt4 = new englishStudent("Tanya", 5, true);
+        englishStudent engSt5 = new englishStudent("Dron", 4, true);
+        englishTeacher engTe1 = new englishTeacher("Dima");
 
-        English_student engSt1 = new English_student("Mykhailo", 4, 1, true);
-        English_student engSt2 = new English_student("Ruslan", 5, 2, false);
-        English_student engSt3 = new English_student("Vadim", 5, 3, true);
-        English_student engSt4 = new English_student("Tanya", 5, 4, true);
-        English_student engSt5 = new English_student("Dron", 4, 5, true);
-        English_teacher engTe1 = new English_teacher("Dima", 4);
+        System.out.println("Курси з англійської мови:" + "\nКількість студентів = " + englishStudent.getStudentCounter() +
+                "\nКількість викладачів =" + englishTeacher.getTeacherCounter() +
+                "\nКількість студентів що виконали домашнє завдання =" + englishStudent.getHomeworkCounter());
 
-        System.out.println("Курси з англійської мови:" + "\nКількість студентів = " + English_student.getStudentCounter() +
-                "\nКількість викладачів =" + English_teacher.getTeacherCounter() +
-                "\nКількість студентів що виконали домашнє завдання =" + English_student.getHomeworkCounter());
+        germanStudent gerSt1 = new germanStudent("Sveta", 5, false);
+        germanStudent gerSt2 = new germanStudent("Mykhailo", 4, true);
+        germanTeacher gerTe1 = new germanTeacher("Kostya");
 
-        German_student gerSt1 = new German_student("Sveta", 5, 5, false);
-        German_student gerSt2 = new German_student("Mykhailo", 4, 6, true);
-        German_teacher gerTe1 = new German_teacher("Kostya", 7);
+        System.out.println("Курси з нiмецької мови:" + "\nКількість студентів = " + germanStudent.getStudentCounter() +
+                "\nКількість викладачів =" + germanTeacher.getTeacherCounter() +
+                "\nКількість студентів що виконали домашнє завдання =" + germanStudent.getHomeworkCounter());
 
-        System.out.println("Курси з нiмецької мови:" + "\nКількість студентів = " + German_student.getStudentCounter() +
-                "\nКількість викладачів =" + German_teacher.getTeacherCounter() +
-                "\nКількість студентів що виконали домашнє завдання =" + German_student.getHomeworkCounter());
+        frenchStudent frSt1 = new frenchStudent("Vadya", 4, true);
+        frenchStudent frSt2 = new frenchStudent("Ruslan", 5, true);
+        frenchStudent frSt3 = new frenchStudent("Lena", 5, true);
+        frenchTeacher frTe1 = new frenchTeacher("Anya");
+        frenchTeacher frTe2 = new frenchTeacher("Tolya");
 
-        French_student frSt1 = new French_student("Vadya", 4, 8, true);
-        French_student frSt2 = new French_student("Ruslan", 5, 9, true);
-        French_student frSt3 = new French_student("Lena", 5, 10, true);
-        French_teacher frTe1 = new French_teacher("Anya", 11);
-        French_teacher frTe2 = new French_teacher("Tolya", 10);
+        System.out.println("Курси з французької мови:" + "\nКількість студентів = " + frenchStudent.getStudentCounter() +
+                "\nКількість викладачів =" + frenchTeacher.getTeacherCounter() +
+                "\nКількість студентів що виконали домашнє завдання =" + frenchStudent.getHomeworkCounter());
 
-        System.out.println("Курси з французької мови:" + "\nКількість студентів = " + French_student.getStudentCounter() +
-                "\nКількість викладачів =" + French_teacher.getTeacherCounter() +
-                "\nКількість студентів що виконали домашнє завдання =" + French_student.getHomeworkCounter());
+        System.out.println("Кiлькість студентів школи =" + servStudent.getStudentCounter());
+        System.out.println("Кiлькість викладачів школи =" + servTeacher.getTeacherCounter());
 
     }
 
