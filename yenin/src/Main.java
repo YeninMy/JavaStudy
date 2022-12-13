@@ -13,6 +13,8 @@ public class Main {
         English_student engSt1 = new English_student("Mykhailo", 4, 1, true);
         English_student engSt2 = new English_student("Ruslan", 5, 2, false);
         English_student engSt3 = new English_student("Vadim", 5, 3, true);
+        English_student engSt4 = new English_student("Vasya", 5, 4, true);
+        English_student engSt5 = new English_student("Dron", 4, 5, true);
         English_teacher engTe1 = new English_teacher("Dima", 4);
 
         System.out.println("Курси з англійської мови:" + "\nКількість студентів = " + English_student.getStudentCounter() +
@@ -36,6 +38,8 @@ public class Main {
         System.out.println("Курси з французької мови:" + "\nКількість студентів = " + French_student.getStudentCounter() +
                 "\nКількість викладачів =" + French_teacher.getTeacherCounter() +
                 "\nКількість студентів що виконали домашнє завдання =" + French_student.getHomeworkCounter());
+
+
 
     }
 
