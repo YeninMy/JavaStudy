@@ -1,33 +1,32 @@
-package french_cources;
+package onlineSchool.frenchCources;
 
-public class French_student {
-    private static int studentcounter;
+import onlineSchool.servStudent;
+
+public class frenchStudent {
+    private static int studentCounter;
 
     private String name;
     private int marks;
 
-    private int id;
     private boolean homework_done;
 
     private static int homework_counter;
 
-    public French_student(String name, int marks, int id, boolean homework_done) {
+    public frenchStudent(String name, int marks, boolean homework_done) {
+        servStudent.studentId++;
         this.name = name;
         this.marks = marks;
-        this.id = id;
         this.homework_done = homework_done;
-        studentcounter++;
+        studentCounter++;
         if (homework_done) {
             homework_counter++;
         }
     }
-
     public static int getStudentCounter() {
-        return French_student.studentcounter;
+        return frenchStudent.studentCounter;
     }
-
     public static int getHomeworkCounter() {
-        return French_student.homework_counter;
+        return frenchStudent.homework_counter;
     }
 }
 
