@@ -6,6 +6,7 @@ import onlineSchool.germanCources.germanStudent;
 import onlineSchool.germanCources.germanTeacher;
 import onlineSchool.servStudent;
 import onlineSchool.servTeacher;
+import onlineSchool.lecture;
 
 public class Main {
     public static void main(String[] args) {
@@ -18,16 +19,16 @@ public class Main {
         englishTeacher engTe1 = new englishTeacher("Dima");
 
         System.out.println("Курси з англійської мови:" + "\nКількість студентів = " + englishStudent.getStudentCounter() +
-                "\nКількість викладачів =" + englishTeacher.getTeacherCounter() +
-                "\nКількість студентів що виконали домашнє завдання =" + englishStudent.getHomeworkCounter());
+                "\nКількість викладачів = " + englishTeacher.getTeacherCounter() +
+                "\nКількість студентів що виконали домашнє завдання = " + englishStudent.getHomeworkCounter());
 
         germanStudent gerSt1 = new germanStudent("Sveta", 5, false);
         germanStudent gerSt2 = new germanStudent("Mykhailo", 4, true);
         germanTeacher gerTe1 = new germanTeacher("Kostya");
 
         System.out.println("Курси з нiмецької мови:" + "\nКількість студентів = " + germanStudent.getStudentCounter() +
-                "\nКількість викладачів =" + germanTeacher.getTeacherCounter() +
-                "\nКількість студентів що виконали домашнє завдання =" + germanStudent.getHomeworkCounter());
+                "\nКількість викладачів = " + germanTeacher.getTeacherCounter() +
+                "\nКількість студентів що виконали домашнє завдання = " + germanStudent.getHomeworkCounter());
 
         frenchStudent frSt1 = new frenchStudent("Vadya", 4, true);
         frenchStudent frSt2 = new frenchStudent("Ruslan", 5, true);
@@ -36,11 +37,23 @@ public class Main {
         frenchTeacher frTe2 = new frenchTeacher("Tolya");
 
         System.out.println("Курси з французької мови:" + "\nКількість студентів = " + frenchStudent.getStudentCounter() +
-                "\nКількість викладачів =" + frenchTeacher.getTeacherCounter() +
-                "\nКількість студентів що виконали домашнє завдання =" + frenchStudent.getHomeworkCounter());
+                "\nКількість викладачів = " + frenchTeacher.getTeacherCounter() +
+                "\nКількість студентів що виконали домашнє завдання = " + frenchStudent.getHomeworkCounter());
 
-        System.out.println("Кiлькість студентів школи =" + servStudent.getStudentCounter());
-        System.out.println("Кiлькість викладачів школи =" + servTeacher.getTeacherCounter());
+        System.out.println("Кiлькість студентів школи = " + servStudent.getStudentCounter());
+        System.out.println("Кiлькість викладачів школи = " + servTeacher.getTeacherCounter());
+
+        lecture lec1 = new lecture("lec1", 1, "English");
+        lecture lec2 = new lecture("lec2", 2, "German");
+        lecture lec3 = new lecture("lec3", 3, "French");
+        lecture lec4 = new lecture("lec4", 4, "German");
+        lecture lec5 = new lecture("lec5", 5, "English");
+        lecture lec6 = new lecture("lec6", 6, "English");
+        System.out.println("Усього лекцій проведено= " + lecture.lecCounter);
+        System.out.println("Лекцій з англійської мови проведено= " + lecture.engLecCounter);
+        System.out.println("Лекцій з німецької мови проведено= " + lecture.gerLecCounter);
+        System.out.println("Лекцій з французької мови проведено= " + lecture.frLecCounter);
+        System.out.println("ID 6ої лекції= " + lec6.id);
 
     }
 
