@@ -1,4 +1,4 @@
-package onlineSchool.frenchCources;
+package onlineSchool.сources.frenchCources;
 
 import onlineSchool.servStudent;
 

@@ -1,12 +1,13 @@
-import onlineSchool.englsihCources.englishStudent;
-import onlineSchool.englsihCources.englishTeacher;
-import onlineSchool.frenchCources.frenchStudent;
-import onlineSchool.frenchCources.frenchTeacher;
-import onlineSchool.germanCources.germanStudent;
-import onlineSchool.germanCources.germanTeacher;
+import onlineSchool.сources.englsihCources.englishStudent;
+import onlineSchool.сources.englsihCources.englishTeacher;
+import onlineSchool.сources.frenchCources.frenchStudent;
+import onlineSchool.сources.frenchCources.frenchTeacher;
+import onlineSchool.сources.germanCources.germanStudent;
+import onlineSchool.сources.germanCources.germanTeacher;
 import onlineSchool.servStudent;
 import onlineSchool.servTeacher;
-import onlineSchool.lecture;
+import onlineSchool.сources.cource;
+import onlineSchool.сources.lecture;
 
 public class Main {
     public static void main(String[] args) {
@@ -43,17 +44,23 @@ public class Main {
         System.out.println("Кiлькість студентів школи = " + servStudent.getStudentCounter());
         System.out.println("Кiлькість викладачів школи = " + servTeacher.getTeacherCounter());
 
-        lecture lec1 = new lecture("lec1", 1, "English");
-        lecture lec2 = new lecture("lec2", 2, "German");
-        lecture lec3 = new lecture("lec3", 3, "French");
-        lecture lec4 = new lecture("lec4", 4, "German");
-        lecture lec5 = new lecture("lec5", 5, "English");
-        lecture lec6 = new lecture("lec6", 6, "English");
+        cource c1 = new cource("lec1", 1, "English");
+        lecture lec1 =new lecture(c1.courceId);
+        cource c2 = new cource("lec2", 2, "German");
+        lecture lec2 =new lecture(c2.courceId);
+        cource c3 = new cource("lec3", 3, "French");
+        lecture lec3 =new lecture(c3.courceId);
+        cource c4 = new cource("lec4", 4, "German");
+        lecture lec4 =new lecture(c4.courceId);
+        cource c5 = new cource("lec5", 5, "English");
+        lecture lec5 =new lecture(c5.courceId);
+        cource c6 = new cource("lec6", 6, "English");
+        lecture lec6 =new lecture(c6.courceId);
         System.out.println("Усього лекцій проведено= " + lecture.lecCounter);
-        System.out.println("Лекцій з англійської мови проведено= " + lecture.engLecCounter);
-        System.out.println("Лекцій з німецької мови проведено= " + lecture.gerLecCounter);
-        System.out.println("Лекцій з французької мови проведено= " + lecture.frLecCounter);
-        System.out.println("ID 6ої лекції= " + lec6.id);
+        System.out.println("Лекцій з англійської мови проведено= " + cource.engLecCounter);
+        System.out.println("Лекцій з німецької мови проведено= " + cource.gerLecCounter);
+        System.out.println("Лекцій з французької мови проведено= " + cource.frLecCounter);
+        System.out.println("ID 6ої лекції= " + c6.courceId);
 
     }
 

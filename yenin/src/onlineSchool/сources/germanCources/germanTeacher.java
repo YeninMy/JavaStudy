@@ -1,4 +1,4 @@
-package onlineSchool.germanCources;
+package onlineSchool.сources.germanCources;
 
 import onlineSchool.servTeacher;
 
