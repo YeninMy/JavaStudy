@@ -1,8 +1,8 @@
-package onlineSchool.englsihCources;
+package onlineSchool.сources.germanCources;
 
 import onlineSchool.servStudent;
 
-public class englishStudent {
+public class germanStudent {
     private static int studentcounter;
 
     private String name;
@@ -12,7 +12,7 @@ public class englishStudent {
 
     private static int homework_counter;
 
-    public englishStudent(String name, int marks, boolean homework_done) {
+    public germanStudent(String name, int marks, boolean homework_done) {
         servStudent.studentId++;
         this.name = name;
         this.marks = marks;
@@ -24,11 +24,11 @@ public class englishStudent {
     }
 
     public static int getStudentCounter() {
-        return englishStudent.studentcounter;
+        return germanStudent.studentcounter;
     }
 
     public static int getHomeworkCounter() {
-        return englishStudent.homework_counter;
+        return germanStudent.homework_counter;
     }
 }
 

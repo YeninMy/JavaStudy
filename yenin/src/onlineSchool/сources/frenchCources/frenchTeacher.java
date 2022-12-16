@@ -1,18 +1,19 @@
-package onlineSchool.englsihCources;
+package onlineSchool.сources.frenchCources;
+
 import onlineSchool.servTeacher;
-public class englishTeacher {
+
+public class frenchTeacher {
     private static int teacherCounter;
 
     String name;
-    private int id;
 
 
-    public englishTeacher(String name) {
+    public frenchTeacher(String name) {
         servTeacher.teacherId++;
         this.name = name;
         teacherCounter++;
         }
     public static int getTeacherCounter() {
-        return englishTeacher.teacherCounter;
+        return frenchTeacher.teacherCounter;
     }
     }
