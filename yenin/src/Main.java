@@ -46,22 +46,22 @@ public class Main {
         System.out.println("Кiлькість викладачів школи = " + servTeacher.getTeacherCounter());
 
         cource c1 = new cource("lec1", 1, "English");
-        lecture lec1 =new lecture(c1.courceId);
+        lecture lec1 = new lecture(c1.courceId);
         cource c2 = new cource("lec2", 2, "German");
-        lecture lec2 =new lecture(c2.courceId);
+        lecture lec2 = new lecture(c2.courceId);
         cource c3 = new cource("lec3", 3, "French");
-        lecture lec3 =new lecture(c3.courceId);
+        lecture lec3 = new lecture(c3.courceId);
         cource c4 = new cource("lec4", 4, "German");
-        lecture lec4 =new lecture(c4.courceId);
+        lecture lec4 = new lecture(c4.courceId);
         cource c5 = new cource("lec5", 5, "English");
-        lecture lec5 =new lecture(c5.courceId);
+        lecture lec5 = new lecture(c5.courceId);
         cource c6 = new cource("lec6", 6, "English");
-        lecture lec6 =new lecture(c6.courceId);
+        lecture lec6 = new lecture(c6.courceId);
         System.out.println("Усього лекцій проведено= " + lecture.lecCounter);
         System.out.println("Лекцій з англійської мови проведено= " + cource.engLecCounter);
         System.out.println("Лекцій з німецької мови проведено= " + cource.gerLecCounter);
         System.out.println("Лекцій з французької мови проведено= " + cource.frLecCounter);
-        System.out.println("ID 6ої лекції= " + c6.courceId);
+        System.out.println("ID 6ої лекції= " + lec6.lecId);
 
 
     }
