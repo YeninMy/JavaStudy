@@ -9,6 +9,7 @@ import onlineSchool.servTeacher;
 import onlineSchool.сources.cource;
 import onlineSchool.сources.lecture;
 
+
 public class Main {
     public static void main(String[] args) {
         System.out.println("Онлайн школа:");
@@ -61,6 +62,7 @@ public class Main {
         System.out.println("Лекцій з німецької мови проведено= " + cource.gerLecCounter);
         System.out.println("Лекцій з французької мови проведено= " + cource.frLecCounter);
         System.out.println("ID 6ої лекції= " + c6.courceId);
+
 
     }
 
