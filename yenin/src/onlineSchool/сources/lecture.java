@@ -1,4 +1,5 @@
 package onlineSchool.сources;
+
 import onlineSchool.сources.cource;
 
 public class lecture {
@@ -7,7 +8,7 @@ public class lecture {
 
     public static int lecCounter;
 
-    public lecture(int lecId){
+    public lecture(int lecId) {
         this.lecId = lecId;
     }
 }
