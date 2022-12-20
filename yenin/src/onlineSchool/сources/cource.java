@@ -5,6 +5,7 @@ public class cource {
 
     public String name;
 
+
     public static int engLecCounter;
 
     public static int gerLecCounter;
