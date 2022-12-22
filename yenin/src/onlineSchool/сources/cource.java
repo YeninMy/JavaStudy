@@ -20,7 +20,6 @@ public class cource {
         this.name = name;
         this.courceId = courceId;
         courceCounter++;
-        lecture.lecCounter++;
         this.topic = topic;
         if (topic == "English") {
             engLecCounter++;

@@ -44,18 +44,21 @@ public class Main {
         lecture lec1 = new lecture(c1.courceId);
         cource c2 = new cource("cource2", 2, "German");
         lecture lec2 = new lecture(c2.courceId);
-        cource c3 = new cource("cource3", 3, "French");
-        lecture lec3 = new lecture(c3.courceId);
-        cource c4 = new cource("cource4", 4, "German");
-        lecture lec4 = new lecture(c4.courceId);
-        cource c5 = new cource("cource5", 5, "English");
-        lecture lec5 = new lecture(c5.courceId);
-        cource c6 = new cource("cource6", 6, "English");
-        lecture lec6 = new lecture(c6.courceId);
+//        cource c3 = new cource("cource3", 3, "French");
+//        lecture lec3 = new lecture(c3.courceId);
+//        cource c4 = new cource("cource4", 4, "German");
+//        lecture lec4 = new lecture(c4.courceId);1
+//        cource c5 = new cource("cource5", 5, "English");
+//        lecture lec5 = new lecture(c5.courceId);
+//        cource c6 = new cource("cource6", 6, "English");
+//        lecture lec6 = new lecture(c6.courceId);
         System.out.println("Усього лекцій проведено= " + lecture.lecCounter);
         System.out.println("Лекцій з англійської мови проведено= " + cource.engLecCounter);
         System.out.println("Лекцій з німецької мови проведено= " + cource.gerLecCounter);
         System.out.println("Лекцій з французької мови проведено= " + cource.frLecCounter);
+
+
+        System.out.println(lecture.lecCounter);
 
 
         if ((student.studentsCounter > 0) && (teacher.teacherCounter > 0) && (lecture.lecCounter > 0)) {
@@ -69,7 +72,7 @@ public class Main {
                     System.out.println("id створенного вами крусу =" + c7.courceId);
                     break;
                 case 2:
-                    lecture l7 = new lecture(7);
+                    lecture l7 = new lecture(0);
                     System.out.println("id створенної вами лекції =" + l7.lecId);
                     break;
                 case 3:
@@ -85,16 +88,27 @@ public class Main {
             }
         }
 
+
         System.out.println("Щоб додати нову лекцію введіть id нової лекції: ");
-        Scanner scanner2 = new Scanner(System.in);
-        while (scanner2.hasNext()) {
-            final int i2 = scanner2.nextInt();
-            final String lecIdFromScanner = scanner2.nextLine();
-            lecture lec8 = new lecture(i2);
-            System.out.println(lecture.lecCounter);
-            if (i2 == 0) {
+        Scanner scanner3 = new Scanner(System.in);
+        final int i = scanner3.nextInt();
+        do {
+            final String lecIdFromScanner = scanner3.nextLine();
+            lecture lec = new lecture(i);
+            if (lecture.lecCounter < 7) {
+                System.out.println("Ви успішно створили нову лекцію:" +
+                        "\nЗагальна кількість лекцій = " + lecture.lecCounter +
+                        "\nВведіть id щоб додати нову лекцію:");
+            }
+            if (lecture.lecCounter == 7) {
+                System.out.println("Ви успішно створили нову лекцію:" +
+                        "\nЗагальна кількість лекцій = " + lecture.lecCounter +
+                        "\nВведіть id щоб додати останню лекцію на курсі:");
+            }
+            if (lecture.lecCounter == 8) {
+                System.out.println("Ви не можете створити більше 8-ми лекцій.");
                 break;
             }
-        }
+        } while (i >= 0);
     }
 }
