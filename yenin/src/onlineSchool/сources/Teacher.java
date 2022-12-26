@@ -1,9 +1,8 @@
 package onlineSchool.сources;
 
-import onlineSchool.servStudent;
-import onlineSchool.servTeacher;
+import onlineSchool.ServTeacher;
 
-public class teacher {
+public class Teacher {
     public String name;
 
     public static int teacherCounter;
@@ -17,8 +16,8 @@ public class teacher {
 
     String topic;
 
-    public teacher(String name, String topic) {
-        servTeacher.teacherId++;
+    public Teacher(String name, String topic) {
+        ServTeacher.teacherId++;
         this.name = name;
         teacherCounter++;
         this.topic = topic;

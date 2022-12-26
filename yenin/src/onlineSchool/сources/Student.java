@@ -1,8 +1,8 @@
 package onlineSchool.сources;
 
-import onlineSchool.servStudent;
+import onlineSchool.ServStudent;
 
-public class student {
+public class Student {
     public String name;
     private boolean homeworkDone;
 
@@ -19,8 +19,8 @@ public class student {
 
     String topic;
 
-    public student(String name, String topic, boolean homeworkDone) {
-        servStudent.studentId++;
+    public Student(String name, String topic, boolean homeworkDone) {
+        ServStudent.studentId++;
         this.name = name;
         this.homeworkDone = homeworkDone;
         studentsCounter++;
