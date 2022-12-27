@@ -1,6 +1,6 @@
 package onlineSchool.сources;
 
-public class Сource {
+public class Cource {
     public int courceId;
 
     public String name;
@@ -16,7 +16,7 @@ public class Сource {
 
     String topic;
 
-    public Сource(String name, int courceId, String topic) {
+    public Cource(String name, int courceId, String topic) {
         this.name = name;
         this.courceId = courceId;
         courceCounter++;
@@ -28,6 +28,22 @@ public class Сource {
         } else if (topic == "French") {
             frLecCounter++;
         }
+
+
+    }
+
+    public Cource(int courceId) {
+
+        this.courceId = courceId;
+        courceCounter++;
+
+    }
+
+    @Override
+    public String toString() {
+        return "Cource{" +
+                "courceId='" + courceId + '\'' +
+                '}';
     }
 }
 
