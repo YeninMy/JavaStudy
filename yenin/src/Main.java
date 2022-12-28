@@ -1,9 +1,12 @@
+import onlineSchool.ServCourceLec;
 import onlineSchool.ServStudent;
 import onlineSchool.ServTeacher;
-import onlineSchool.сources.Сource;
 import onlineSchool.сources.Lecture;
 import onlineSchool.сources.Student;
 import onlineSchool.сources.Teacher;
+import onlineSchool.сources.Cource;
+import onlineSchool.repository.CourceArray;
+import onlineSchool.repository.LecArray;
 
 import java.util.Scanner;
 
@@ -40,75 +43,28 @@ public class Main {
         System.out.println("Кiлькість студентів школи = " + ServStudent.getStudentCounter());
         System.out.println("Кiлькість викладачів школи = " + ServTeacher.getTeacherCounter());
 
-        Сource c1 = new Сource("cource1", 1, "English");
-        Lecture lec1 = new Lecture(c1.courceId);
-        Сource c2 = new Сource("cource2", 2, "German");
-        Lecture lec2 = new Lecture(c2.courceId);
-//        cource c3 = new cource("cource3", 3, "French");
-//        lecture lec3 = new lecture(c3.courceId);
-//        cource c4 = new cource("cource4", 4, "German");
-//        lecture lec4 = new lecture(c4.courceId);1
-//        cource c5 = new cource("cource5", 5, "English");
-//        lecture lec5 = new lecture(c5.courceId);
-//        cource c6 = new cource("cource6", 6, "English");
-//        lecture lec6 = new lecture(c6.courceId);
+        //Cource c1 = new Cource("cource1", 1, "English");
+        //  Lecture lec1 = new Lecture(c1.courceId);
+//        Сource c2 = new Сource("cource2", 2, "German");
+//        Lecture lec2 = new Lecture(c2.courceId);
+//        Сource c3 = new Сource("cource2", 2, "German");
+//        Lecture lec3 = new Lecture(c3.courceId);
+
         System.out.println("Усього лекцій проведено= " + Lecture.lecCounter);
-        System.out.println("Лекцій з англійської мови проведено= " + Сource.engLecCounter);
-        System.out.println("Лекцій з німецької мови проведено= " + Сource.gerLecCounter);
-        System.out.println("Лекцій з французької мови проведено= " + Сource.frLecCounter);
+        System.out.println("Лекцій з англійської мови проведено= " + Cource.engLecCounter);
+        System.out.println("Лекцій з німецької мови проведено= " + Cource.gerLecCounter);
+        System.out.println("Лекцій з французької мови проведено= " + Cource.frLecCounter);
 
 
-        System.out.println(Lecture.lecCounter);
+        ServCourceLec.oneCourceThreeLec();
 
 
-        if ((Student.studentsCounter > 0) && (Teacher.teacherCounter > 0) && (Lecture.lecCounter > 0)) {
-            System.out.println("Натисни 1 щоб додати новий курс:" + "\nНатисни 2 щоб додати нову лекцію:"
-                    + "\nНатисни 3 щоб додати нового студента:" + "\nНатисни 4 щоб додати нового вчителя:");
-            Scanner scanner1 = new Scanner(System.in);
-            final int i1 = scanner1.nextInt();
-            switch (i1) {
-                case 1:
-                    Сource c7 = new Сource("cource7", 7, "English");
-                    System.out.println("id створенного вами крусу =" + c7.courceId);
-                    break;
-                case 2:
-                    Lecture l7 = new Lecture(0);
-                    System.out.println("id створенної вами лекції =" + l7.lecId);
-                    break;
-                case 3:
-                    Student St11 = new Student("Vadim", "French", false);
-                    System.out.println("Імʼя доданого вами студента = " + St11.name);
-                    break;
-                case 4:
-                    Teacher T5 = new Teacher("Yuriy", "English");
-                    System.out.println("Імʼя доданого вами вчителя = " + T5.name);
-                    break;
-                default:
-                    System.out.println("Невірне значення.");
-            }
+        System.out.println("Натисныть '1' Щоб вывести на экран id усіх курсів та лекцій:");
+        Scanner scanner2 = new Scanner(System.in);
+        int q = scanner2.nextInt();
+        if (q == 1) {
+            ServCourceLec.allCourceId();
+            ServCourceLec.allLecId();
         }
-
-
-        System.out.println("Щоб додати нову лекцію введіть id нової лекції: ");
-        Scanner scanner3 = new Scanner(System.in);
-        final int i = scanner3.nextInt();
-        do {
-            final String lecIdFromScanner = scanner3.nextLine();
-            Lecture lec = new Lecture(i);
-            if (Lecture.lecCounter < 7) {
-                System.out.println("Ви успішно створили нову лекцію:" +
-                        "\nЗагальна кількість лекцій = " + Lecture.lecCounter +
-                        "\nВведіть id щоб додати нову лекцію:");
-            }
-            if (Lecture.lecCounter == 7) {
-                System.out.println("Ви успішно створили нову лекцію:" +
-                        "\nЗагальна кількість лекцій = " + Lecture.lecCounter +
-                        "\nВведіть id щоб додати останню лекцію на курсі:");
-            }
-            if (Lecture.lecCounter == 8) {
-                System.out.println("Ви не можете створити більше 8-ми лекцій.");
-                break;
-            }
-        } while (i >= 0);
     }
 }
