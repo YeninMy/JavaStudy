@@ -26,7 +26,7 @@ public class SuperArray {
 
     public void getById() {
         Scanner Scanner1 = new Scanner(System.in);
-        System.out.println("Інвормація:" + "\nId = " + essences[Scanner1.nextInt()].getId());
+        System.out.println("Інформація:" + "\nId = " + essences[Scanner1.nextInt()].getId());
     }
 
     public void deleteById() {

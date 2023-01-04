@@ -1,19 +1,21 @@
 package onlineSchool;
 
+
+import static onlineSchool.Lectures.lectures;
+
 public class Main {
     public static void main(String[] args) {
 
-        Lectures lecturesFunc = new Lectures();
-        lecturesFunc.add();
-        lecturesFunc.add();
-        lecturesFunc.add();
-        System.out.println("Усі лекції на курсі:");
-        lecturesFunc.getAll();
-        System.out.println("Щоб дізнатись інформацію про лекцію введіть Id:");
-        lecturesFunc.getById();
-        System.out.println("Щоб видалити лекцію введіть Id:");
-        lecturesFunc.deleteById();
-        System.out.println("Усі лекції на курсі:");
-        lecturesFunc.getAll();
-    }
+        Lectures lecture1 = new Lectures();
+        lecture1.add();
+        Person t1 = new Person(0);
+        t1.setRole(Role.TEACHER);
+        lectures[0].setPersonId(0);
+        lecture1.getById();
+        System.out.println(t1);
+
+
+
+
+}
 }

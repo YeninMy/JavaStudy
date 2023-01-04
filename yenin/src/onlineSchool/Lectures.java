@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class Lectures extends SuperArray {
-    private static Lecture[] lectures = new Lecture[10];
+    public static Lecture[] lectures = new Lecture[10];
     private int lectureCounter;
 
     public int getLectureCounter() {
@@ -23,7 +23,8 @@ public class Lectures extends SuperArray {
     @Override
     public void getById() {
         Scanner Scanner1 = new Scanner(System.in);
-        System.out.println(lectures[Scanner1.nextInt()].getId());
+        System.out.println(lectures[Scanner1.nextInt()]);
+        System.out.println();
     }
 
     @Override

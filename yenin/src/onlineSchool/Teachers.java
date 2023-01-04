@@ -23,7 +23,7 @@ public class Teachers extends SuperArray {
     @Override
     public void getById() {
         Scanner Scanner1 = new Scanner(System.in);
-        System.out.println("Інвормація:" + "\nId = " + teachers[Scanner1.nextInt()].getId());
+        System.out.println("Інформація:" + "\nId = " + teachers[Scanner1.nextInt()].getId());
     }
 
     @Override
