@@ -10,12 +10,10 @@ public class Main {
         lecture1.add();
         Person t1 = new Person(0);
         t1.setRole(Role.TEACHER);
-        lectures[0].setPersonId(0);
+        lectures[0].setPersonId(t1.getId());
         lecture1.getById();
         System.out.println(t1);
 
 
-
-
-}
+    }
 }
