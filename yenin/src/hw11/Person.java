@@ -1,4 +1,5 @@
-package onlineSchool;
+package hw11;
+
 
 public class Person {
     private int id;
@@ -40,4 +41,5 @@ public class Person {
                 ", role=" + role +
                 '}';
     }
+
 }
