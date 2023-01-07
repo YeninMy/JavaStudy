@@ -45,9 +45,9 @@ public class Person {
         return email;
     }
 
-    public void isEmailValid(){
-      if(getEmail().contains("@")) {
-      }
+    public void isEmailValid() {
+        if (getEmail().contains("@")) {
+        }
         System.out.println("Email is valid");
     }
 
