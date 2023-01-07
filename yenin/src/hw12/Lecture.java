@@ -1,8 +1,26 @@
-package hw11;
+package hw12;
 
 public class Lecture {
     private int id;
     private int personId;
+    private String name;
+    private String description;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
 
     public int getId() {
         return id;
@@ -37,6 +55,8 @@ public class Lecture {
         return "Lecture{" +
                 "id=" + id +
                 ", personId=" + personId +
+                ", name='" + name + '\'' +
+                ", description='" + description + '\'' +
                 '}';
     }
 }
