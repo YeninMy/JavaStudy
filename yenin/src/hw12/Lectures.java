@@ -1,9 +1,9 @@
-package hw11;
+package hw12;
 
 import java.util.Arrays;
 import java.util.Scanner;
 
-import static hw11.Persons.persons;
+import static hw12.Persons.persons;
 
 public class Lectures {
     public static Lecture[] lectures = new Lecture[10];
@@ -28,8 +28,8 @@ public class Lectures {
         System.out.println("Введіть Id лекції щоб отримати усю доступну інформацію:");
         Scanner Scanner1 = new Scanner(System.in);
         int i = Scanner1.nextInt();
-        hw11.Lecture l1 = new Lecture();
-        hw11.Person p1 = new Person();
+        hw12.Lecture l1 = new Lecture();
+        hw12.Person p1 = new Person();
         for (int q = 0; q < lectures.length; q++) {
             if (l1.getId() == i) {
                 System.out.println(lectures[i]);
