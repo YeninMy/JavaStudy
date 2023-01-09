@@ -1,4 +1,4 @@
-package hw12;
+package onlineSchool;
 
 public enum Role {
     STUDENT,
