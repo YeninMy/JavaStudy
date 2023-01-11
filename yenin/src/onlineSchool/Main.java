@@ -11,7 +11,7 @@ public class Main {
         arrayUtils.arrays = new Lecture[10];
         System.out.println("Лекцій ще не проводили? " + arrayUtils.isEmpty());
         arrayUtils.arrays[0] = new Lecture(0);
-        arrayUtils.add(1,new Lecture(1));
+        arrayUtils.add(1, new Lecture(1));
         arrayUtils.add(new Lecture(2));
 //
         System.out.println("Перша лекція: " + arrayUtils.arrays[0]);
@@ -21,6 +21,11 @@ public class Main {
         System.out.println("Лекцій ще не проводили? " + arrayUtils.isEmpty());
         arrayUtils.toColumns();
 
+        Lecture l1 = new Lecture();
+        Homework h1 = new Homework();
+        l1.homeworkArray = new Homework[10];
+        arrayUtils.add(3, new Lecture(3, "Лекция", new Homework(0, "домашка1")));
+        System.out.println(l1.homeworkArray.toString());
     }
 }
 
