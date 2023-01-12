@@ -1,4 +1,4 @@
-package hw12;
+package onlineSchool;
 
 public class Cource {
     private String name;
