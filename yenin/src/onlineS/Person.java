@@ -1,7 +1,7 @@
 package onlineS;
 
 public class Person {
-    private int id;
+    private Integer id = 0;
     private Role role;
 
     private String firstName;

@@ -3,7 +3,7 @@ package onlineS;
 
 
 public class Lecture {
-    private int id;
+    private Integer id=0;
     private int personId;
     private String name;
     private String description;

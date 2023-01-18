@@ -1,7 +1,7 @@
 package onlineS;
 
 public class Homework {
-private int id;
+private Integer id = 0;
 private int lectureId;
 private String task;
 
