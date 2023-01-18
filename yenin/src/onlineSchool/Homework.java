@@ -42,6 +42,7 @@ public class Homework {
         return "Homework{" +
                 "id=" + id +
                 ", task='" + task + '\'' +
+                ", additionalMaterials=" + additionalMaterials +
                 '}';
     }
 }

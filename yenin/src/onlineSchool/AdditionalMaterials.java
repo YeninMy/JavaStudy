@@ -32,6 +32,10 @@ public class AdditionalMaterials {
     public AdditionalMaterials() {
     }
 
+    public AdditionalMaterials(Integer id) {
+        this.id = id;
+    }
+
     public AdditionalMaterials(Integer id, String name, ResourceType resourceType) {
         this.id = id;
         this.name = name;
