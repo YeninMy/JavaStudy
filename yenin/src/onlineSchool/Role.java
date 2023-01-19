@@ -1,4 +1,4 @@
-package onlineS;
+package onlineSchool;
 
 public enum Role {
     STUDENT,

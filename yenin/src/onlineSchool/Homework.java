@@ -1,9 +1,9 @@
-package onlineS;
+package onlineSchool;
 
 public class Homework {
-private Integer id = 0;
-private int lectureId;
-private String task;
+    private Integer id = 0;
+    private String task;
+    private AdditionalMaterials additionalMaterials;
 
     public int getId() {
         return id;
@@ -11,14 +11,6 @@ private String task;
 
     public void setId(int id) {
         this.id = id;
-    }
-
-    public int getLectureId() {
-        return lectureId;
-    }
-
-    public void setLectureId(int lectureId) {
-        this.lectureId = lectureId;
     }
 
     public String getTask() {
@@ -29,19 +21,28 @@ private String task;
         this.task = task;
     }
 
+    public AdditionalMaterials getAdditionalMaterials() {
+        return additionalMaterials;
+    }
+
+    public void setAdditionalMaterials(AdditionalMaterials additionalMaterials) {
+        this.additionalMaterials = additionalMaterials;
+    }
+
     public Homework() {
     }
+
     public Homework(int id, String task) {
         this.id = id;
         this.task = task;
     }
-
 
     @Override
     public String toString() {
         return "Homework{" +
                 "id=" + id +
                 ", task='" + task + '\'' +
+                ", additionalMaterials=" + additionalMaterials +
                 '}';
     }
 }
