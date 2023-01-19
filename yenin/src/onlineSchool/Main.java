@@ -2,12 +2,15 @@ package onlineSchool;
 
 
 import java.util.ArrayList;
+
 import java.util.Collections;
+
 import java.util.List;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+
         List<Person> persons = new ArrayList<>();
         persons.add(new Person(0, Role.TEACHER, "Vadya", "Bedrytzkiy"));
         persons.add(new Person(1, Role.STUDENT, "Dima", "Prikolchyk"));
@@ -16,7 +19,6 @@ public class Main {
         persons.add(new Person(4, Role.STUDENT, "Vadim", "Vasenin"));
         ComparatorByPesonLastName comparatorByPesonLastName = new ComparatorByPesonLastName();
         Collections.sort(persons, comparatorByPesonLastName);
-
         List<Lecture> lectures = new ArrayList<>();
         lectures.add(new Lecture(0, "Массиви", new Homework(0, "Реалізуйте массив")));
         List<Homework> homeworks = new ArrayList<>();
@@ -40,10 +42,12 @@ public class Main {
 
         lectures.add(new Lecture(3, "Коллекції", new Homework(3, "Реалізуйте Лист")));
         homeworks.add(lectures.get(3).getHomework());
+
         System.out.println("Склад школи: ");
         persons.forEach(System.out::println);
         ComparatorByLectureName comparatorByLectureName = new ComparatorByLectureName();
         Collections.sort(lectures, comparatorByLectureName);
+
         System.out.println("Лекції на курсі: ");
         lectures.forEach(System.out::println);
 
@@ -114,7 +118,6 @@ public class Main {
                 Collections.sort(additionalMaterialsList, comparatorByAdMaId);
                 additionalMaterialsList.forEach(System.out::println);
         }
-
 
     }
 }
