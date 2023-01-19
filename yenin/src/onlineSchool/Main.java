@@ -7,7 +7,8 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) {    List<Person> persons = new ArrayList<>();
+    public static void main(String[] args) {
+        List<Person> persons = new ArrayList<>();
         persons.add(new Person(0, Role.TEACHER, "Vadya", "Bedrytzkiy"));
         persons.add(new Person(1, Role.STUDENT, "Dima", "Prikolchyk"));
         persons.add(new Person(2, Role.STUDENT, "Sveta", "Zhuravel"));
@@ -42,7 +43,7 @@ public class Main {
         System.out.println("Склад школи: ");
         persons.forEach(System.out::println);
         ComparatorByLectureName comparatorByLectureName = new ComparatorByLectureName();
-        Collections.sort(lectures,comparatorByLectureName);
+        Collections.sort(lectures, comparatorByLectureName);
         System.out.println("Лекції на курсі: ");
         lectures.forEach(System.out::println);
 
@@ -100,20 +101,19 @@ public class Main {
         switch (q) {
             case 1:
                 ComparatorByAdMaName comparatorByAdMaName = new ComparatorByAdMaName();
-                Collections.sort(additionalMaterialsList,comparatorByAdMaName);
+                Collections.sort(additionalMaterialsList, comparatorByAdMaName);
                 additionalMaterialsList.forEach(System.out::println);
                 break;
             case 2:
                 ComparatorByAdMaType comparatorByAdMaType = new ComparatorByAdMaType();
-                Collections.sort(additionalMaterialsList,comparatorByAdMaType);
+                Collections.sort(additionalMaterialsList, comparatorByAdMaType);
                 additionalMaterialsList.forEach(System.out::println);
                 break;
             default:
                 ComparatorByAdMaId comparatorByAdMaId = new ComparatorByAdMaId();
-                Collections.sort(additionalMaterialsList,comparatorByAdMaId);
+                Collections.sort(additionalMaterialsList, comparatorByAdMaId);
                 additionalMaterialsList.forEach(System.out::println);
         }
-
 
 
     }
