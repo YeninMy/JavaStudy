@@ -80,6 +80,23 @@ public class Person {
         this.id = id;
     }
 
+    public Person(Integer id, Role role, String firstName, String lastName) {
+        this.id = id;
+        this.role = role;
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
+
+    public Person(Integer id, Role role, String firstName, String lastName, String phone, String email) {
+        this.id = id;
+        this.role = role;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.phone = phone;
+        this.email = email;
+    }
+
+
     public Person(int id, Role role) {
         this.id = id;
         this.role = role;
