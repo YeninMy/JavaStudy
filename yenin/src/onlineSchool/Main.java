@@ -1,6 +1,5 @@
 package onlineSchool;
 
-
 import java.io.File;
 import java.io.IOException;
 import java.util.*;
@@ -25,9 +24,6 @@ public class Main {
 
         ComparatorByPesonLastName comparatorByPesonLastName = new ComparatorByPesonLastName();
         Collections.sort(persons, comparatorByPesonLastName);
-
-
-
 
         lectures.add(new Lecture(0, "Массиви", new Homework(0, "Реалізуйте массив")));
         LogService.writeLogs(lectures.get(0),Level.INFO);
@@ -55,9 +51,8 @@ public class Main {
         additionalMaterialsList.add(homeworks.get(2).getAdditionalMaterials());
         LogService.writeLogs(additionalMaterialsList.get(2),Level.INFO);
 
+
         LogService.ReadLogs();
 //        LogService.clearLogs();
     }
-
-
 }
