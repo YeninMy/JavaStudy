@@ -42,7 +42,6 @@ public class Lecture {
         this.name = name;
         this.homework = homework;
     }
-
     @Override
     public String toString() {
         return "Lecture{" +

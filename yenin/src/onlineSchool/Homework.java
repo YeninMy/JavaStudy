@@ -29,7 +29,8 @@ public class Homework {
         this.additionalMaterials = additionalMaterials;
     }
 
-    public Homework() {
+    public Homework(int id) {
+        this.id = id;
     }
 
     public Homework(int id, String task) {
