@@ -52,6 +52,6 @@ public class Main {
 
         LogService.ReadLogs();
 
-//      LogService.clearLogs();
+//      LogService.clearLogs();  - для очистики файлу Логів.
     }
 }
