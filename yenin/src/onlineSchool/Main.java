@@ -51,6 +51,7 @@ public class Main {
         LogService.writeLogs(additionalMaterialsList.get(2), Level.INFO);
 
         LogService.ReadLogs();
+
 //      LogService.clearLogs();
     }
 }
