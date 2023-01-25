@@ -2,10 +2,10 @@ package onlineSchool;
 
 public class LogUtils {
     public static Log[] logs = new Log[50];
-    public static int logcounter;
-
+    public static int logCounter;
+    public static int errCounter;
     public static void add() {
-        logs[logcounter] = new Log();
+        logs[logCounter] = new Log();
     }
 
     public static void toColumns() {
@@ -16,4 +16,5 @@ public class LogUtils {
         }
     }
 }
+
 
