@@ -8,11 +8,6 @@ import java.util.Scanner;
 
 public class Client {
     public static void main(String[] args) {
-        try{
-        System.out.println(InetAddress.getLocalHost());}
-        catch (IOException e) {
-            throw new RuntimeException(e);
-        }
         try (Socket socket = new Socket()) {
             socket.connect(new InetSocketAddress(InetAddress.getLocalHost(), 9000), 2000);
             Scanner scanner = new Scanner(socket.getInputStream());
@@ -26,15 +21,4 @@ public class Client {
 }
 
 
-//    void createClient() {
-//      try (Socket socket = new Socket()) {
-//            Scanner scanner = new Scanner(socket.getInputStream());
-//            socket.connect(new InetSocketAddress(InetAddress.getLocalHost(), 57688), 2000);
-//            while (scanner.hasNext()) {
-//                System.out.println(scanner.nextLine());
-//            }
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
-//    }
 

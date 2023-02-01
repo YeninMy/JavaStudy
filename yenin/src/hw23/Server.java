@@ -1,4 +1,5 @@
 package hw23;
+
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.net.ServerSocket;
@@ -6,6 +7,7 @@ import java.net.Socket;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.nio.file.StandardOpenOption;
 import java.util.List;
 import java.util.Objects;
 import java.util.Scanner;
@@ -14,6 +16,7 @@ public class Server {
 
     public static void main(String[] args) {
 
+//        addToBlackList("192.168.0.106");
         Server soc = new Server();
         soc.createServer();
     }
@@ -23,21 +26,22 @@ public class Server {
              Socket socket = serverSocket.accept();
              Scanner scanner = new Scanner(socket.getInputStream());
              PrintWriter writer = new PrintWriter(socket.getOutputStream())) {
-
-            final Path p = Paths.get("yenin/src/hw23/blaskList.txt");
+            final Path p = Paths.get("yenin/src/hw23/blackList.txt");
             final List<String> strings = Files.readAllLines(p);
+            String ip = socket.getInetAddress().getHostAddress();
             for (String string : strings) {
-                String s = string;
-                if(Objects.equals(s, socket.getInetAddress())){
-                    System.out.println("Доступ заборонено!");
+                if (Objects.equals(string, ip)) {
+                    writer.println("Access denied!");
+                    writer.println("");
                 }
             }
-            writer.write("Hello");
+            writer.println("Hello! You just connected from ip: " + ip);
+            writer.println("");
             writer.flush();
 
             while (scanner.hasNext()) {
                 final String s = scanner.nextLine();
-                writer.println("You say " + s);
+                writer.println("Client request: " + s);
                 writer.flush();
                 System.out.println(s);
                 if (s.equals("exit")) {
@@ -49,15 +53,16 @@ public class Server {
         }
     }
 
-    public static List getBlackList() {
-        List<String> strings = null;
+    public static void addToBlackList(String ip) {
         try {
-            final Path p = Paths.get("yenin/src/hw23/blaskList.txt");
-            strings = Files.readAllLines(p);
+            final Path p = Paths.get("yenin/src/hw23/blackList.txt");
+            Files.write(p, System.getProperty("line.separator").getBytes(), StandardOpenOption.APPEND);
+            Files.write(p, ip.getBytes(), StandardOpenOption.APPEND);
+            System.out.println("New IP added to blacklist: " + ip);
         } catch (IOException e) {
             e.printStackTrace();
         }
-        return strings;
+
     }
 }
 
