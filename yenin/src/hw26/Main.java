@@ -1,6 +1,5 @@
 package hw26;
 
-
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
@@ -27,7 +26,6 @@ public class Main {
         for (Lecture l : Lecture.lectures) {
             Material.materials.add(l.getMaterials());
         }
-
         System.out.println("Lectures sort by Id:");
         Lecture.printLecturesById();
         System.out.println("----------------------");
@@ -46,6 +44,6 @@ public class Main {
         System.out.println("----------------------");
         Lecture.printLecturesBeforeDate(LocalDate.parse("22-11-2000", dateFormatter));
         System.out.println("----------------------");
-        Lecture.printLecturesInInterval(LocalDate.parse("01-01-2000", dateFormatter),LocalDate.parse("22-11-2021", dateFormatter));
+        Lecture.printLecturesInInterval(LocalDate.parse("01-01-2000", dateFormatter), LocalDate.parse("22-11-2021", dateFormatter));
     }
 }
