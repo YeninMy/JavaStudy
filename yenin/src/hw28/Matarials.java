@@ -24,4 +24,12 @@ private Type type;
         this.id = id;
         this.type = type;
     }
+
+    @Override
+    public String toString() {
+        return "Matarials{" +
+                "id=" + id +
+                ", type=" + type +
+                '}';
+    }
 }
