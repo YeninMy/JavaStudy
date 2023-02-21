@@ -1,4 +1,5 @@
-package hw28;
+package hw29;
+
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -6,8 +7,7 @@ import java.nio.file.Paths;
 import java.util.List;
 
 public class Logger {
-    static final String pathLogs = "yenin/src/hw28/logs.txt";
-
+    static final String pathLogs = "yenin/src/hw29/emails.txt";
     public static void createFile(final String path) {
         try {
             final Path p = Paths.get(path);
@@ -31,15 +31,5 @@ public class Logger {
         } catch (IOException e) {
             e.printStackTrace();
         }
-    }
-    public static List logsToList(final String path) {
-        List<String> strings = null;
-        try {
-            final Path p = Paths.get(path);
-            strings = Files.readAllLines(p);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        return strings;
     }
 }
