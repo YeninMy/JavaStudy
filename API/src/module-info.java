@@ -1,3 +1,0 @@
-module API {
-    requires Service;
-}
