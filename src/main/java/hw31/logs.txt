@@ -1,0 +1,6 @@
+04-Mar-2023 15:54 Teacher added: Teacher{id=1, name='Yuriy'}
+04-Mar-2023 15:54 Lecture added: Lecture{id=1, name='Enum', teacher=Teacher{id=1, name='Yuriy'}}
+04-Mar-2023 15:54 Teacher added: Teacher{id=2, name='Vlad'}
+04-Mar-2023 15:54 Lecture added: Lecture{id=2, name='Arrays', teacher=Teacher{id=2, name='Vlad'}}
+04-Mar-2023 15:54 Teacher added: Teacher{id=3, name='Andriy'}
+04-Mar-2023 15:54 Lecture added: Lecture{id=3, name='List', teacher=Teacher{id=3, name='Andriy'}}
