@@ -32,9 +32,8 @@ public class LoggerTest {
     }
 
 
-
     @Test
-    public void testCreateFile_newFile() {
+    public void testCreateFileNewFile() {
         Logger.createFile(tempFilePathString);
         String expectedMessage = "File created: " + tempFilePathString;
         String actualMessage = baos.toString().replace("\\", "/").trim();
@@ -59,23 +58,36 @@ public class LoggerTest {
 
 
     @Test
-    public void testReadText_existingFile() throws IOException {
+    public void testReadTextExistingFile() throws IOException {
         List<String> expected = Arrays.asList("line 1", "line 2", "line 3");
         Files.write(tempFilePath, expected);
         Logger.readText(tempFilePath.toString());
-        String expectedText = String.join("\n",expected).trim();
+        String expectedText = String.join("\n", expected).trim();
         String actualText = baos.toString().trim();
         assertEquals(expectedText.replaceAll("\\r\\n", "\n"), actualText.replaceAll("\\r\\n", "\n"));
     }
 
     @Test
-    public void testReadText_nonExistingFile() {
+    public void testReadTextNonExistingFile() {
         assertThrows(NoSuchFileException.class, () ->
                 Logger.readText("src/test/java/hw31/noexist.txt"));
     }
+    @Test
+    public void testLogsToListExistingFile() throws IOException {
+        List<String> expectedText = Arrays.asList("line 1", "line 2", "line 3");
+        Files.write(tempFilePath, expectedText);
+        List<String> actualText = Logger.logsToList(tempFilePath.toString());
+        assertEquals(expectedText, actualText);
+    }
+
+    @Test
+    public void testLogsToListNonExistingFile() {
+        assertThrows(NoSuchFileException.class, () -> Logger.logsToList("non-existing-file.txt"));
+    }
+
 
     @AfterEach
-    void afterEach(){
+    void afterEach() {
         System.setOut(System.out);
     }
 
