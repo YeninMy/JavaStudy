@@ -1,6 +1,31 @@
-04-Mar-2023 15:54 Teacher added: Teacher{id=1, name='Yuriy'}
-04-Mar-2023 15:54 Lecture added: Lecture{id=1, name='Enum', teacher=Teacher{id=1, name='Yuriy'}}
-04-Mar-2023 15:54 Teacher added: Teacher{id=2, name='Vlad'}
-04-Mar-2023 15:54 Lecture added: Lecture{id=2, name='Arrays', teacher=Teacher{id=2, name='Vlad'}}
-04-Mar-2023 15:54 Teacher added: Teacher{id=3, name='Andriy'}
-04-Mar-2023 15:54 Lecture added: Lecture{id=3, name='List', teacher=Teacher{id=3, name='Andriy'}}
+06-Mar-2023 20:38 Teacher added: Teacher{id=1, name='Yuriy'}
+06-Mar-2023 20:38 Lecture added: Lecture{id=1, name='Enum', teacher=Teacher{id=1, name='Yuriy'}}
+06-Mar-2023 20:38 Teacher added: Teacher{id=2, name='Vlad'}
+06-Mar-2023 20:38 Lecture added: Lecture{id=2, name='Arrays', teacher=Teacher{id=2, name='Vlad'}}
+06-Mar-2023 20:38 Teacher added: Teacher{id=3, name='Andriy'}
+06-Mar-2023 20:38 Lecture added: Lecture{id=3, name='List', teacher=Teacher{id=3, name='Andriy'}}
+06-Mar-2023 20:44 Teacher added: Teacher{id=1, name='Sveta', email='zhuravel@gmail.com'}
+06-Mar-2023 20:45 Teacher added: Teacher{id=1, name='Sveta', email='zhuravel@gmail.com'}
+06-Mar-2023 20:47 Teacher added: Teacher{id=1, name='Sveta', email='zhuravel@gmail.com'}
+06-Mar-2023 20:52 Teacher added: Teacher{id=1, name='Sveta', email='zhuravel@gmail.com'}
+06-Mar-2023 20:52 Teacher added: Teacher{id=2, name='Russel', email='ruslanmeta.ua'}
+06-Mar-2023 20:52 Teacher added: Teacher{id=1, name='Sveta', email='zhuravel@gmail.com'}
+06-Mar-2023 20:52 Teacher added: Teacher{id=2, name='Russel', email='ruslanmeta.ua'}
+06-Mar-2023 20:54 Teacher added: Teacher{id=1, name='Sveta', email='zhuravel@gmail.com'}
+06-Mar-2023 20:54 Teacher added: Teacher{id=2, name='Russel', email='ruslanmeta.ua'}
+06-Mar-2023 20:54 Teacher added: Teacher{id=1, name='Sveta', email='zhuravel@gmail.com'}
+06-Mar-2023 20:54 Teacher added: Teacher{id=2, name='Russel', email='ruslanmeta.ua'}
+06-Mar-2023 20:57 Teacher added: Teacher{id=1, name='Sveta', email='zhuravel@gmail.com'}
+06-Mar-2023 20:57 Teacher added: Teacher{id=2, name='Russel', email='ruslanmeta.ua'}
+06-Mar-2023 20:59 Teacher added: Teacher{id=1, name='Sveta', email='zhuravel@gmail.com'}
+06-Mar-2023 20:59 Teacher added: Teacher{id=2, name='Russel', email='ruslanmeta.ua'}
+06-Mar-2023 21:00 Teacher added: Teacher{id=1, name='Sveta', email='zhuravel@gmail.com'}
+06-Mar-2023 21:00 Teacher added: Teacher{id=2, name='Russel', email='ruslanmeta.ua'}
+06-Mar-2023 21:00 Teacher added: Teacher{id=1, name='Sveta', email='zhuravel@gmail.com'}
+06-Mar-2023 21:00 Teacher added: Teacher{id=2, name='Russel', email='ruslanmeta.ua'}
+06-Mar-2023 21:00 Teacher added: Teacher{id=1, name='Sveta', email='zhuravel@gmail.com'}
+06-Mar-2023 21:00 Teacher added: Teacher{id=2, name='Russel', email='ruslanmeta.ua'}
+06-Mar-2023 21:00 Teacher added: Teacher{id=1, name='Sveta', email='zhuravel@gmail.com'}
+06-Mar-2023 21:00 Teacher added: Teacher{id=2, name='Russel', email='ruslanmeta.ua'}
+06-Mar-2023 21:00 Teacher added: Teacher{id=1, name='Sveta', email='zhuravel@gmail.com'}
+06-Mar-2023 21:00 Teacher added: Teacher{id=2, name='Russel', email='ruslanmeta.ua'}

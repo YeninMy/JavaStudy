@@ -76,7 +76,7 @@ public class LoggerTest {
     public void testLogsToListExistingFile() throws IOException {
         List<String> expectedText = Arrays.asList("line 1", "line 2", "line 3");
         Files.write(tempFilePath, expectedText);
-        List<String> actualText = Logger.logsToList(tempFilePath.toString());
+        List actualText = Logger.logsToList(tempFilePath.toString());
         assertEquals(expectedText, actualText);
     }
 
