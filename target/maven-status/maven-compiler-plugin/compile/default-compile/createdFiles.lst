@@ -1,6 +1,8 @@
+JDBC\AbstractRepository.class
 hw20\LogUtils.class
 hw31\Logger.class
 hw27\Teacher.class
+JDBC\Lecture.class
 hw24\Type.class
 hw25\Lecture.class
 hw21\Main$1.class
@@ -14,6 +16,7 @@ hw20\Main.class
 hw28\Main.class
 hw29\Role.class
 hw24\Materials.class
+JDBC\Main.class
 hw20\Level.class
 hw21\ComparatorByTime.class
 hw29\Lecture.class
@@ -47,6 +50,7 @@ hw29\Person.class
 hw24\Course.class
 hw22\Log.class
 hw29\Logger.class
+JDBC\Utils.class
 hw25\Homework.class
 hw26\Main.class
 hw28\Matarials.class
