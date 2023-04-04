@@ -8,7 +8,6 @@ public class Main {
         Lecture lec2 = new Lecture();
         Lecture.copyLecById(lec2,1,2);
         Lecture lec3 = new Lecture(3, "JDBC", LocalDate.of(2023, 2, 2));
-        Lecture.delLecture(2);
         Utils.getCount("lectures");
         Utils.getCountPrepared("lectures");
         Utils.printTable("lectures");
