@@ -3,6 +3,8 @@ package JDBC;
 import java.sql.*;
 
 public class Utils {
+
+
     public static void getCount(String tablename) throws Exception {
         int index = tablename.indexOf(' ');
         if (index > -1) {

@@ -1,4 +1,5 @@
-package JDBC;
+package hw33;
+
 
 import lombok.SneakyThrows;
 

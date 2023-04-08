@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd">
+
+<!--    <context:property-placeholder location="classpath:application.properties"/>-->
+
+    <bean id="curse" class="spring.Curse" scope="singleton">
+        <property name="curceNum" value="1"/>
+    </bean>
+    <bean id="lec" class="spring.Lecture" scope="singleton">
+        <property name="curceNum" value="1"/>
+    </bean>
+
+    </beans>
