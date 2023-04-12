@@ -1,5 +1,6 @@
-package hibernate;
+package hibernate.DBUtils;
 
+import hibernate.Lecture;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
@@ -8,18 +9,7 @@ import org.hibernate.query.Query;
 import java.util.List;
 
 public class LecUtils {
-    public void saveLecture(final Lecture lecture) {
-        final SessionFactory sessionFactory = SessionCreator.getSessionFactory();
-        try (Session session = sessionFactory.openSession()) {
-            final Transaction transaction = session.beginTransaction();
-            session.save(lecture);
-            transaction.commit();
-        } catch (Exception e) {
-            System.out.println(e.getMessage());
-        }
-    }
-
-    public Lecture getLecture(final int id) {
+    public static Lecture getLecture(final int id) {
         final SessionFactory sessionFactory = SessionCreator.getSessionFactory();
         try (Session session = sessionFactory.openSession()) {
             final Lecture lecture = session.find(Lecture.class, Integer.valueOf(id));
@@ -29,7 +19,7 @@ public class LecUtils {
         }
     }
 
-    public void deleteLecture(final int id) {
+    public static void deleteLecture(final int id) {
         final SessionFactory sessionFactory = SessionCreator.getSessionFactory();
         try (Session session = sessionFactory.openSession()) {
             Transaction transaction = null;
@@ -51,7 +41,7 @@ public class LecUtils {
         }
     }
 
-    public List<Lecture> getAllLectures() {
+    public static List<Lecture> getAllLectures() {
         final SessionFactory sessionFactory = SessionCreator.getSessionFactory();
         try (Session session = sessionFactory.openSession()) {
             Query<Lecture> query = session.createQuery("FROM Lecture", Lecture.class);

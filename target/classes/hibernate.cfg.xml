@@ -30,6 +30,9 @@
         <property name="format_sql">true</property>
 
         <mapping class="hibernate.Lecture"/>
+        <mapping class="hibernate.Student"/>
+        <mapping class="hibernate.Homework"/>
+
 
 
 

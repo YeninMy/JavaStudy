@@ -29,6 +29,7 @@ hw28\Lecture.class
 hw31\Main.class
 hw29\Person.class
 hw22\Log.class
+hibernate\Teacher.class
 hw28\Matarials.class
 hw28\Logger.class
 hibernate\SessionCreator.class
@@ -62,6 +63,7 @@ hw21\ComparatorByTime.class
 spring2\Lecture.class
 hw29\Lecture.class
 hw26\Type.class
+hibernate\DBUtils.class
 hw26\Lecture.class
 hw20\LogService.class
 hw20\Role.class
@@ -89,6 +91,5 @@ hw27\Logger.class
 hw29\Material.class
 hw25\Logger.class
 hw20\AdditionalMaterials.class
-hibernate\LecUtils.class
 hw20\ComparatorByAdMaName.class
 hw20\ResourceType.class
