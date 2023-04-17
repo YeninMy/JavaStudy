@@ -1,4 +1,4 @@
-package hibernate;
+package hibernate.DBUtils;
 
 import org.hibernate.HibernateException;
 import org.hibernate.SessionFactory;
