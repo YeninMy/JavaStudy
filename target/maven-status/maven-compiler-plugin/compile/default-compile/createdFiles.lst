@@ -10,6 +10,7 @@ hw20\Main.class
 Project\Genre.class
 spring2\DB\DBConnection.class
 hw20\Level.class
+hibernate\DBUtils\SessionCreator.class
 hw20\Homework.class
 hw22\Level.class
 hw29\Main.class
@@ -32,8 +33,8 @@ hw22\Log.class
 hibernate\Teacher.class
 hw28\Matarials.class
 hw28\Logger.class
-hibernate\SessionCreator.class
 hw33\Student.class
+hibernate\Cource.class
 spring\Main.class
 hw27\Lecture.class
 hw29\Type.class
@@ -44,12 +45,15 @@ hw22\Logger.class
 spring2\Config.class
 hw23\Server.class
 JDBC\AbstractRepository.class
+hibernate\DBUtils\StUtils.class
 JDBC\Lecture.class
+hibernate\DBUtils\LecUtils.class
 hw21\Main$1.class
 hw28\Person.class
 hw20\ComparatorByAdMaId.class
 spring2\DB\DBConfig.class
 hw25\Main.class
+hibernate\Homework.class
 hw33\Servletes\LecPage.class
 hw20\Person.class
 spring2\Teacher.class
@@ -63,7 +67,6 @@ hw21\ComparatorByTime.class
 spring2\Lecture.class
 hw29\Lecture.class
 hw26\Type.class
-hibernate\DBUtils.class
 hw26\Lecture.class
 hw20\LogService.class
 hw20\Role.class
@@ -73,9 +76,11 @@ spring2\Main.class
 hw21\Main$3.class
 hw24\Student.class
 hw31\Lecture.class
+hibernate\Student.class
 hw23\Client.class
 hw21\Student.class
 hw24\Main.class
+hibernate\DBUtils\DBUtils.class
 hw20\ComparatorByAdMaType.class
 hw27\Main.class
 hw24\Course.class
