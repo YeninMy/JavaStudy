@@ -1,0 +1,15 @@
+<ehcache xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="http://ehcache.org/ehcache.xsd"
+         updateCheck="false">
+
+<defaultCache
+            maxEntriesLocalHeap="100"
+            timeToLiveSeconds="3600" />
+    <cache name="Cource"
+           maxEntriesLocalHeap="50"
+           timeToLiveSeconds="1800" />
+    <cache name="Lecture"
+           maxEntriesLocalHeap="60"
+           timeToLiveSeconds="1800" />
+    
+</ehcache>

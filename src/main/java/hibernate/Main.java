@@ -8,6 +8,8 @@ import static hibernate.DBUtils.StUtils.getAllStudents;
 
 public class Main {
     public static void main(String[] args) {
+        Cource cource1 = new Cource();
+        cource1.setName("Java");
 
         Teacher teacher1 = new Teacher();
         teacher1.setName("Vadya");
@@ -67,10 +69,14 @@ public class Main {
         student3.addLecture(lecture3);
 
         // Сохранение сущностей после установки связей
+        cource1.addLecture(lecture1);
+        cource1.addLecture(lecture2);
+        cource1.addLecture(lecture3);
 
-        saveEntity(lecture1);
-        saveEntity(lecture2);
-        saveEntity(lecture3);
+//        saveEntity(lecture1);
+//        saveEntity(lecture2);
+//        saveEntity(lecture3);
+        saveEntity(cource1);
         saveEntity(student1);
         saveEntity(student2);
         saveEntity(student3);
